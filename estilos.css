@@ -11,6 +11,11 @@ body{
   background-color: #02010a;
 }
 
+.contenido{
+	width: 900px;
+	margin: auto;
+}
+
 .contenedor{
 	display: flex;
 	flex-wrap: nowrap;
@@ -18,31 +23,6 @@ body{
 
 #encabezado{
 	width: 70%;
-}
-
-#enlaces{
-	width: 30%;
-}
-
-#enlaces{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	text-align: right;
-	align-items: center;
-}
-
-.enlaces{
-	width: 10%;
-}
-
-#contenedor{
-	width: 900px;
-	margin: auto;
-}
-
-#encabezado{
 	float: left;
 	padding-left: 10px;
 	border-top-left-radius: 10px;
@@ -56,14 +36,34 @@ body{
 }
 
 #enlaces{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 	float: right;
 	padding-right: 10px;
 	border-top-right-radius: 10px;
 	background-color:#5b7989;
 }
 
+.enlaces{
+	width: 10%;
+}
+
 #enlaces a:visited, a{
 	color: white;
+}
+
+#imagen_central{
+	background-color: #82c3a6;
+}
+
+#imagen_central img{
+	display: block;
+	margin: auto;
+	padding: 20px 50px 20px 50px;
 }
 
 @media screen and (max-width:900px) {
