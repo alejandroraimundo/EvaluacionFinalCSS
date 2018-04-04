@@ -64,6 +64,29 @@ body{
 	display: block;
 	margin: auto;
 	padding: 20px 50px 20px 50px;
+	width: 75%;
+}
+
+#contenedor_imagen_secundaria{
+	display: flex;
+	background-color: #d5c75f;
+	border: 1px solid black;
+}
+
+.imagen_secundaria{
+	width: 50%;
+}
+
+.imagen_secundaria img{
+	display: block;
+	margin: auto;
+	max-width: 75%;
+	height: auto;
+	padding: 50px;
+}
+
+#paisajes{
+	
 }
 
 @media screen and (max-width:900px) {
