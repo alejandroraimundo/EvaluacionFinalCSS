@@ -56,6 +56,21 @@ body{
 	color: white;
 }
 
+#contenido_section{
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor_section{
+	display: flex;
+	flex-direction: row;
+}
+
+#imagenes_secundarias > div{
+	text-align: center;
+	width: 50%;
+}
+
 #imagen_central{
 	background-color: #82c3a6;
 }
@@ -67,26 +82,44 @@ body{
 	width: 75%;
 }
 
-#contenedor_imagen_secundaria{
-	display: flex;
+#imagenes_secundarias{
 	background-color: #d5c75f;
+	padding: 20px 10px 45px 10px;
 	border: 1px solid black;
 }
 
-.imagen_secundaria{
-	width: 50%;
-}
-
-.imagen_secundaria img{
+#retratos img, #paisajes img{
 	display: block;
 	margin: auto;
-	max-width: 75%;
+	box-shadow: 2px 2px 2px #02010a;
+	max-width: 80%;
 	height: auto;
-	padding: 50px;
 }
 
-#paisajes{
-	
+@-webkit-keyframes paisajes-animacion{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(10deg);
+	}
+}
+
+#paisajes img:hover{
+	animation: paisajes-animacion 2s;
+}
+
+@-webkit-keyframes retratos-animacion{
+	from{
+		transform: translate(none);
+	}
+	to{
+		transform: translate(20px, -5px);
+	}
+}
+
+#retratos img:hover{
+	animation: retratos-animacion 2s;
 }
 
 @media screen and (max-width:900px) {
