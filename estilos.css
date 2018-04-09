@@ -66,12 +66,9 @@ body{
 	flex-direction: row;
 }
 
-#imagenes_secundarias > div{
-	text-align: center;
-	width: 50%;
-}
-
 #imagen_central{
+	width: 100%;
+	text-align: center;
 	background-color: #82c3a6;
 }
 
@@ -86,6 +83,11 @@ body{
 	background-color: #d5c75f;
 	padding: 20px 10px 45px 10px;
 	border: 1px solid black;
+}
+
+#imagenes_secundarias > div{
+	text-align: center;
+	width: 50%;
 }
 
 #retratos img, #paisajes img{
@@ -121,6 +123,24 @@ body{
 #retratos img:hover{
 	animation: retratos-animacion 2s;
 }
+
+.contenedor-footer{
+	display: flex;
+	flex-direction: row;
+}
+
+#footer{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #C6d5c5;
+}
+
+.info-footer{
+	vertical-align: top;
+	padding-left: 10px;
+	width: 25%;
+}
+
 
 @media screen and (max-width:900px) {
   #encabezado{
