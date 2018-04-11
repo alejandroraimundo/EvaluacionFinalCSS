@@ -19,13 +19,15 @@ body{
 .contenedor{
 	display: flex;
 	flex-wrap: nowrap;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color:#5b7989;
 }
 
 #encabezado{
 	width: 70%;
 	float: left;
 	padding-left: 10px;
-	border-top-left-radius: 10px;
 	background-color:#5b7989;
 }
 
@@ -44,7 +46,6 @@ body{
 	align-items: center;
 	float: right;
 	padding-right: 10px;
-	border-top-right-radius: 10px;
 	background-color:#5b7989;
 }
 
@@ -72,16 +73,18 @@ body{
 	background-color: #82c3a6;
 }
 
+.contenedor_section > div{
+		padding: 20px 50px 20px 50px;
+}
+
 #imagen_central img{
 	display: block;
 	margin: auto;
-	padding: 20px 50px 20px 50px;
 	width: 75%;
 }
 
 #imagenes_secundarias{
 	background-color: #d5c75f;
-	padding: 20px 10px 45px 10px;
 	border: 1px solid black;
 }
 
@@ -94,8 +97,7 @@ body{
 	display: block;
 	margin: auto;
 	box-shadow: 2px 2px 2px #02010a;
-	max-width: 80%;
-	height: auto;
+	max-width: 90%;
 }
 
 @-webkit-keyframes paisajes-animacion{
@@ -141,14 +143,75 @@ body{
 	width: 25%;
 }
 
+@media screen and (max-width: 900px) {
+	.contenido{
+		width: 100%;
+		margin: auto;
+	}
 
-@media screen and (max-width:900px) {
-  #encabezado{
-    width: 50%;
+	.contenedor{
+		display: flex;
+		flex-direction: column;
+		padding-right: 10px;
+	}
+
+	#encabezado{
+		width: 100%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	#encabezado h1{
+		text-align: center;
+	}
+
+	#enlaces{
+		width: 100%;
+	}
+
+	.enlaces{
+		width: 10%;
+	}
+
+	#contenido_section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenedor_section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#imagen_central{
+		width: 100%;
+	}
+
+	#imagen_central img, #imagenes_secundarias img{
+		width: 75%;
+	}
+
+	#imagenes_secundarias > div{
+		width: 100%;
+	}
+
+	#paisajes{
+		width: 100%;
 		order: 1;
-  }
-  #enlaces{
-    width: 50%;
+	}
+
+	#retratos{
+		width: 100%;
 		order: 2;
-  }
+	}
+
+	.contenedor-footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info-footer{
+		padding-left: 50px;
+		width: 100%;
+	}
 }
